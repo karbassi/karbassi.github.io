@@ -1,0 +1,882 @@
+#footer {
+	position:relative;
+	margin: 25px auto 0 auto;
+	padding-top: 35px;
+    padding-bottom: 25px;
+	overflow: hidden;
+	background: url("../images/red_logo.png") no-repeat scroll center top transparent;
+	width: 960px;
+}
+
+#first_column { margin-left:55px; }
+
+.footer-content {
+	padding:0px;
+	float:left;
+	width: 146px;
+	margin-left: 20px;
+	margin-bottom: 16px;
+    padding: 0 10px 0 0;
+	border-right: 1px dotted #7E7E7C;
+    height: 400px;
+}
+
+#footer #socialBlock { border-right: none; }
+
+.footer-content .menu{
+    color: #8C8C8C;
+    font-family: arial;
+    font-size: 12px;
+    line-height: 18px;
+    list-style: none outside none;
+    margin-bottom: 16px;
+    padding: 0;
+    text-transform: none;
+}
+
+.footer-content .menu a{
+	color:#666;
+	text-decoration:none;
+}
+
+.footer-content .menu a:hover{
+	color:#fff;
+	text-decoration:none;
+}
+
+.footer-content .title{
+    color: #E8E8E8;
+    font-family: Stratum_black;
+    font-size: 14px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.footer-content #social li a {
+    background-image: url("../images/ucon_siri_logos.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 25px;
+    width: 63px;
+}
+
+.footer-content #follow_us li:first-child a {
+    background-image: url("../images/footer-logos.gif");
+    background-repeat: no-repeat;
+    display: block;
+    width: 26px;
+	height: 25px;
+    padding-top: 7px;
+    text-align: center;
+    text-indent: 30px;
+}
+
+.footer-content #follow_us li a {
+    background-image: url("../images/social_icons.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 26px;
+	height: 22px;
+	padding-top: 7px;
+    text-align: center;
+}
+
+.footer-content #follow_us li:first-child a:hover {
+	background-position: -36px 0 !important;
+}
+
+.footer-content #social li.youtube a span {
+    margin: 0 0 0 59px;
+}
+
+.footer-content #social li a span {
+	color: #666;
+    font-family: Arial;
+    display: block;
+    font-size: 12px;
+    margin: 0 0 0 30px;
+	padding-top:7px;
+}
+ #social li a span:hover {
+	color: #fff;
+}
+
+.footer-content li.facebook, .footer-content li.twitter, .footer-content li.youtube {
+    margin:10px 0px;
+}
+
+.footer-content li.facebook a {
+    background-position: left 0px;
+}
+.footer-content li.twitter a {
+    background-position: left -33px;
+}
+.footer-content li.youtube a {
+    background-position: -7px -61px;
+	width:52px !important;
+}
+.footer-content li.facebook a:hover {
+    background-position: -40px 0px;
+}
+.footer-content li.twitter a:hover {
+    background-position: -40px -33px;
+}
+.footer-content li.youtube a:hover {
+    background-position: -7px -90px;
+}
+
+#toplinks{
+	clear: both;
+	width:960px;
+	margin: 0 10px;
+	border-bottom:1px solid #2a2a2a;
+	padding-bottom: 15px;
+}
+
+#toplinks .links li{
+	float:left;
+	margin-right:15px;
+}
+
+#toplinks ul.links .last{
+	background: url("../images/footer_arrow.png") no-repeat scroll 93% 68% transparent;
+	float: right;
+	margin-right: 0;
+	padding-right: 22px;
+	margin-top:5px;
+}
+
+#toplinks .links {
+	font-family: Arial;
+	font-size:10px;
+	color:#8C8C8C;
+	text-transform:none;
+	list-style:none;
+	line-height:18px;
+	padding:0px;
+}
+
+#toplinks .links a{
+	color:#8C8C8C;
+	text-decoration:none;
+}
+
+#toplinks .links a:hover{
+	color:#fff;
+	text-decoration:none;
+}
+#toplinks .links li.automobility{
+	background: url("../images/automob_logo.png") no-repeat scroll 0 0 transparent;
+	border:0;
+    height: 20px;
+    width: 78px;
+	text-indent: -9999px;
+}
+#toplinks .links li.automobility a{
+	width:55px;
+	height:21px;
+	float:left;
+	outline:none;
+}
+#toplinks .links li.accessibility{
+	background: url("../images/accessible.png") no-repeat scroll 0 0 transparent;
+    height: 21px;
+    text-indent: -9999px;
+    width: 55px;
+	margin-bottom:4px;
+}
+#toplinks .links li.accessibility a{
+	width:55px;
+	height:21px;
+	float:left;
+	outline:none;
+}
+
+#copyright {
+	clear:both;
+    margin:0 10px;
+}
+
+#copyright p {
+	font-family: Arial;
+	font-size:10px;
+	color:#666;
+	padding:0px;
+}
+
+#footer #logo_links {
+    width: 960px;
+	margin-left: 11px;
+}
+
+#footer #logo_links li {
+    display: inline;
+    float: left;
+}
+
+#footer #logo_links li.chryslerllc { /*width:611px;*/ }
+#footer #logo_links li.chryslerCapital{ width:534px; }
+
+#logo_links .chryslerCapital a {
+background-image: url("../images/chrysler_capital.png") !important;
+background-position: left 3px;
+	width:60px;
+	 margin-left: 9px;
+	height: 20px !important;
+}
+#logo_links .chryslerCapital a:hover {
+   background-position: left -13px;
+	height: 20px !important;
+}
+#footer #logo_links a {
+    background-image: url("../images/brand_logos.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 25px;
+	text-indent: -9000px;
+	margin-top: 10px;
+}
+
+#logo_links .ramtruck a {
+	background-position: 0 0;
+	width:33px;
+}
+#logo_links .dodge a {
+    background-position: -32px 0;
+	width:74px;
+}
+#logo_links .chrysler a {
+    background-position: -105px 0;
+	width:71px;
+}
+#logo_links .jeep a {
+    background-position: -175px 0;
+	width:48px;
+}
+#logo_links .drivesrt a {
+    background-position: -223px 0;
+	width:56px;
+}
+#logo_links .fiatusa a {
+    background-position: -280px 0;
+	width:25px;
+}
+#logo_links .mopar a {
+    background-position: -301px 0;
+	width:31px;
+}
+
+#logo_links .chryslerllc a:hover {
+    background-position: left -11px;
+}
+#logo_links .
+truck a:hover {
+	background-position: 0 -27px;
+}
+#logo_links .dodge a:hover {
+    background-position: -32px -27px;
+}
+#logo_links .chrysler a:hover {
+    background-position: -105px -27px;
+}
+#logo_links .jeep a:hover {
+    background-position: -175px -27px;
+	width:48px;
+}
+#logo_links .drivesrt a:hover {
+    background-position: -223px -27px;
+	width:56px;
+}
+#logo_links .fiatusa a:hover {
+    background-position: -280px -27px;
+	width:25px;
+}
+#logo_links .mopar a:hover {
+    background-position: -302px -28px;
+}
+
+
+#vehlinks{
+ float: right;
+    position: relative;
+    right: 40px;
+    top: 20px;
+	padding-bottom:25px;
+	visibility: hidden;
+}
+
+#vehlinks .styles {
+	font-family: Arial;
+	font-size:10px;
+	color:#999;
+	text-transform:none;
+	list-style:none;
+	line-height:10px;
+	padding:0px;
+}
+
+#vehlinks .styles li{
+	border-right: 1px solid #666666;
+	float: left;
+	line-height: 11px;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+
+#vehlinks .styles li.last {
+	border-right: none !important;
+	margin-right: 0px;
+}
+
+#vehlinks .styles a{
+	color:#666;
+	text-decoration:none;
+}
+
+#vehlinks .styles a:hover{
+	color:#999;
+	text-decoration:none;
+}
+/*disclaimers */
+#disclaimer_msrp {
+ clear: both;
+    padding-left: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+	color: #8C8C8C;
+	font-family: arial;
+    font-size: 10px;
+	line-height: 12px;
+	background-color: #000;
+    display: none;
+}
+#disclaimers, #disclaimer_link {display: none;}
+#disclaimers {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #FFFFFF;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-bottom-color: #666666;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color-ltr-source: physical;
+    border-left-color-rtl-source: physical;
+    border-left-color-value: #666666;
+    border-left-style-ltr-source: physical;
+    border-left-style-rtl-source: physical;
+    border-left-style-value: solid;
+    border-left-width-ltr-source: physical;
+    border-left-width-rtl-source: physical;
+    border-left-width-value: 1px;
+    border-right-color-ltr-source: physical;
+    border-right-color-rtl-source: physical;
+    border-right-color-value: #666666;
+    border-right-style-ltr-source: physical;
+    border-right-style-rtl-source: physical;
+    border-right-style-value: solid;
+    border-right-width-ltr-source: physical;
+    border-right-width-rtl-source: physical;
+    border-right-width-value: 1px;
+    border-top-color: #666666;
+    border-top-style: solid;
+    border-top-width: 1px;
+    clear: both;
+    color: #666666;
+    height: 200px;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding-bottom: 22px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 10px;
+    position: absolute;
+    right: 7px;
+    top: 227px;
+    width: 650px;
+    z-index: 91;
+}
+#disclaimers-close {
+    background: url("../images/bg-close-btn.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+	display: none;
+    height: 25px;
+    left: 251px;
+    position: absolute;
+    top: 213px;
+    width: 25px;
+    z-index: 93;
+}
+
+/* Vots footer fix */
+
+#footer li {
+    padding: 0;
+}
+
+#footer ul, #footer li, #footer li a {
+    float: none;
+    padding-left: 0px !important;
+}
+
+
+/* Footer updates */
+
+#chlr_comm .title{
+	display: none;
+}
+
+#ram_truck .title {
+    display: none;
+}
+
+#fuel_eff .title {
+	display: none;
+}
+
+#srt .title {
+    background-image: url("../images/srt_logo.png") ;
+	background-repeat: no-repeat;
+	height: 11px;
+	text-indent: -999px;
+}
+
+#social .uconnect span, .sirius span, .bluetooth span{
+	display: none !important;
+}
+
+#social .uconnect a  {
+	background-position: left 4px;
+    background-repeat: no-repeat;
+    display: block;
+    height: 25px !important;
+    width: 68px !important;
+}
+
+#social .sirius a {
+	background-position: 0 -49px;
+}
+
+#social .bluetooth a {
+	background-position: 0 -40px;
+}
+
+
+#social .uconnect a:hover {
+    background-position: left -61px;
+}
+
+#social .sirius a {
+    background-position: left -18px;
+	width:78px !important;
+}
+
+#social .sirius a:hover {
+    background-position: 0 -83px;
+}
+
+#social .bluetooth a:hover {
+	background-position: 0 -105px;
+}
+
+#follow_us .youtube a span {
+	margin-left: 28px;
+}
+
+#fuel_eff li a{
+    background-image: url("../images/fuel_pump.png");
+    background-repeat: no-repeat;
+	 background-position: left -14px;
+    display: block;
+	height: 19px;
+    width: 20px;
+}
+#ram_truck li a {
+    background-image: url("../images/ram_logo.png");
+    background-repeat: no-repeat;
+	background-position: 1px 5px;
+    display: block;
+	height: 19px;
+    width: 20px;
+	text-indent: 25px;
+	padding-top: 4px;
+}
+
+#mopar li a{
+	background-image: url("../images/mopar_logo.png");
+    background-repeat: no-repeat;
+    display: block;
+	height: 18px;
+    width: 22px;
+	padding-top: 2px;
+    text-indent: 20px;
+}
+
+#mopar li a:hover {
+    background-position: 0 -24px;
+}
+
+#ram_truck li a:hover {
+    background-position: -17px 5px;
+}
+
+#fuel_eff li a{
+    text-indent: 18px;
+	margin-bottom: 22px;
+    margin-top: -15px;
+	padding-top: 1px;
+}
+
+#fuel_eff li a:hover {
+    background-position: left 5px;
+}
+
+.footer-content #follow_us .facebook a span, .twitter a span {
+	margin-left: 31px;
+}
+
+.footer-content #follow_us .youtube a span {
+	margin-left: 58px;
+}
+
+
+
+#logo_links .chryslerllc a {
+background-image: url("../images/chrysler_logos.png") !important;
+background-position: left 5px;
+	width:74px;
+	height: 20px !important;
+}
+
+
+#disclaimer p {
+    color: #666666;
+    font-family: Arial;
+    font-size: 10px;
+    margin-top: 15px;
+	margin-left: 10px;
+}
+
+#financeDis p {
+	margin-top:15px;
+    color: #666666;
+    font-family: Arial;
+    font-size: 10px;
+    padding-bottom: 55px;
+	margin-left: 10px;
+}
+
+/* global promos css start*/
+
+#midbody { margin: auto; width: 960px; /*margin-top: 30px;*/}
+
+#midbody .bhp-promo-carousel .view {
+    float: left;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    width: 891px;
+	padding-bottom: 25px;
+}
+
+#midbody .bhp-promo-carousel .prev-arrow, .bhp-promo-carousel .next-arrow, .bhp-promo-carousel .prev-arrow, .bhp-promo-carousel .next-arrow {
+    background-image: url("../images/2013/arrows.png");
+    background-position: -15px -216px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 160px;
+    margin-top: 5px;
+    width: 34px;
+}
+
+#midbody .bhp-promo-carousel .next-arrow {
+    background-position: -92px -387px;
+}
+#midbody .bhp-promo-carousel .view ul {
+    height: 165px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1345px;
+}
+
+#midbody .bhp-promo-carousel .view ul li {
+    display: block;
+    float: left;
+    height: 165px;
+    padding: 5px 0 0 6px;
+    position: relative;
+    width: 289px;
+}
+
+#midbody .bhp-promo-carousel .prev-arrow, .bhp-promo-carousel .next-arrow, .bhp-promo-carousel .prev-arrow, .bhp-promo-carousel .next-arrow {
+    background-image: url("../images/homepage-arrows2.png");
+    background-position: -19px -387px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 160px;
+    margin-top: 5px;
+    width: 34px;
+}
+
+.promos2 .promo a.rallyimage {
+    background-image: url("../images/buckets/grc-promo-bhp.jpg");
+}
+
+.promos2 .promo, .promos2 .promo a {
+    display: block;
+    float: left;
+    height: 160px;
+    margin-right: 21px;
+    position: relative;
+    width: 289px;
+}
+.promos2 {
+    margin-left: 0 !important;
+    padding-top: 0 !important;
+}
+.promos2 {
+    height: 190px;
+    margin-left: 25px;
+    padding-top: 30px;
+    width: 950px;
+}
+
+.promos2 .promo a {
+    text-decoration: none;
+}
+
+.promos2 .promo p.rallycross {
+    background-image: url("../images/right-red-arrows.png");
+    background-position: right 4px;
+    background-repeat: no-repeat;
+    float: left;
+    height: 18px;
+    left: 66px;
+    position: relative;
+    top: -23px;
+    width: 213px;
+    z-index: 3;
+}
+
+.promos2 .promo p.rallycross a {
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Stratum_bold;
+    font-size: 10px;
+    height: 15px;
+    line-height: 16px;
+    margin-right: 7px;
+    padding-right: 7px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: auto;
+}
+
+.promos2 .promo1, .promos2 .promo1 a {
+    background-image: url("../images/buckets/Homepage_Uconnect_rBall.gif");
+    background-position: -1px 1px;
+    display: block;
+    height: 160px;
+    margin-right: 21px;
+    width: 289px;
+}
+
+.promos2 .promo .nomonthlypayment {
+    color: #DE1B22;
+    font-family: Stratum_bold;
+    font-size: 32px;
+    left: 24px;
+    line-height: 15px;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 79px;
+    z-index: 1;
+}
+
+.promos2 .promo .gcbonuscash {
+    color: #DE1B22;
+    font-family: Stratum_bold;
+    font-size: 20px;
+    font-style: italic;
+    left: 11px;
+    line-height: 19px;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 61px;
+    z-index: 1;
+}
+
+.promos2 .promo .gcbonuscashtext {
+    color: #C3C3C3;
+    font-family: Stratum_bold;
+    font-size: 13px;
+    left: 10px;
+    position: absolute;
+    top: 91px;
+    width: 130px;
+}
+
+.promos2 .promo .militarycash{
+    color: #E7B925;
+    font-size: 35px;
+    font-weight: bold;
+    left: 40px;
+    position: absolute;
+    top: 115px;
+}
+
+.promos2 .promo .midsize {
+    color: #DE1B22;
+    font-family: Stratum_bold;
+    font-size: 18px;
+    left: 14px;
+    line-height: 15px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 110px;
+    z-index: 1;
+}
+
+
+.promo .allowance {
+    -moz-text-blink: none;
+    -moz-text-decoration-color: -moz-use-text-color;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+    color: #C3C3C3;
+    font-family: Stratum_bold;
+    font-size: 18px;
+    left: 20px;
+    line-height: 15px;
+    position: absolute;
+    top: 103px;
+    z-index: 1;
+}
+
+.promo .best_in_class {
+    color: #C3C3C3;
+    font-family: Stratum_bold;
+    font-size: 13px;
+    left: 22px;
+    position: absolute;
+    top: 127px;
+    width: 130px;
+}
+
+.promos2 .promo a.dart_explore {
+    background-image: url("../images/buckets/dart_bonus_promo_tile_bhp.jpg");
+}
+
+.promos2 .promo a.zero_percent {
+    background-image: url("../images/buckets/zero_percent.jpg");
+}
+
+.promos2 .promo a.dart_lease { background-image: url("../images/buckets/dart_lease_promo_tile_bhp.jpg"); }
+.promos2 .promo a.dart_incentive { background-image: url("../images/buckets/dart-incentive.jpg"); }
+.promos2 .promo a.dart_lease p, .promos2 .promo a.dart_incentive p.consumer_cash, .promos2 .promo a.dart_incentive p.apr {
+    color: #FFFFFF;
+    font-family: 'Stratum_black';
+    font-size: 10px;
+    left: 15px;
+    position: relative;
+    top: 56px;
+}
+.promos2 .promo a.dart_incentive p.consumer_cash, .promos2 .promo a.dart_incentive p.apr {
+    font-size: 12px;
+    left: 99px;
+    top: 59px;
+}
+.promos2 .promo a.dart_incentive p.apr {
+    left: 102px;
+    top: 113px;
+}
+.dart_sxt_lease_promo {
+    height: 158px;
+    position: absolute;
+    width: 143px;
+}
+
+.sign_n_drive {
+    margin-top: 21px !important;
+}
+
+
+.promos2 .promo a.dart_allowance { background-image: url("../images/buckets/dart_allowance_promo_tile_bhp.jpg"); }
+
+.promos2 .promo a.dart_allowance p {
+    color: #FFFFFF;
+    font-family: 'Stratum_black';
+    font-size: 20px;
+    left: 9px;
+    position: absolute;
+    top: 30px;
+}
+.promos2 .promo a.dart_allowance p span { color: #C3C3C3; }
+.promos2 .promo a.dart_explore p, .promos2 .promo a.zero_percent p
+{
+	color: #FFFFFF;
+    font-family: 'Stratum_black';
+    font-size: 20px;
+    font-weight: bold;
+    left: 178px;
+    position: absolute;
+    top: 37px;
+}
+
+.promos2 .promo a.zero_percent p
+{
+	color:#e71727;
+	left:132px;
+	top:48px;
+	text-transform:uppercase;
+}
+
+.promos2 .promo a.dart_explore p span { color: #C3C3C3; }
+
+.promo_no_payment, .promo_apr { 
+	position: absolute;
+	left:21px;
+	top:45px;
+	text-transform:uppercase;
+	font-family:"TradeGothic";
+    *font-family: 'Stratum_black';
+	font-size:24px;
+	color:#DE1B22;
+	text-decoration:none;
+}
+.promo_apr {
+	top:109px;
+}
+/*global promos css ends*/
+#disclaimers dd{
+	clear: left;
+	width: 634px;
+	font-size: 11px;
+}
+#disclaimers p{
+	clear: both;
+	font-size: 11px;
+}
+#disclaimers dt {
+    display: none !important;
+}
+
+#social_second_group sub { font-size: 90%; vertical-align: -4px; }
+
+.view .tooltip
+{
+	vertical-align:top;
+}

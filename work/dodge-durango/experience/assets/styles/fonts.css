@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'TradeGothic';
+    src: url('../fonts/trade_gothic_condensed_no_18-webfont.eot');
+    src: url('../fonts/trade_gothic_condensed_no_18-webfont.eot%3F') format('embedded-opentype'),
+         url('../fonts/trade_gothic_condensed_no_18-webfont.woff') format('woff'),
+         url('../fonts/trade_gothic_condensed_no_18-webfont.ttf') format('truetype'),
+         url('../fonts/trade_gothic_condensed_no_18-webfont.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothic';
+    src: url('../fonts/trade_gothic_light-webfont.eot');
+    src: url('../fonts/trade_gothic_light-webfont.eot%3F') format('embedded-opentype'),
+         url('../fonts/trade_gothic_light-webfont.woff') format('woff'),
+         url('../fonts/trade_gothic_light-webfont.ttf') format('truetype'),
+         url('../fonts/trade_gothic_light-webfont.svg') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'TradeGothic';
+    src: url('../fonts/trade_gothic_bold_condensed_no_20-webfont.eot');
+    src: url('../fonts/trade_gothic_bold_condensed_no_20-webfont.eot%3F') format('embedded-opentype'),
+         url('../fonts/trade_gothic_bold_condensed_no_20-webfont.woff') format('woff'),
+         url('../fonts/trade_gothic_bold_condensed_no_20-webfont.ttf') format('truetype'),
+         url('../fonts/trade_gothic_bold_condensed_no_20-webfont.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*footer font styles*/
+@font-face {
+    font-family: 'Stratum_black';
+    src: url('../../external/css/TradeGothic.eot'); /* IE9 Compat Modes */
+    src: url('../../external/css/TradeGothic.eot%3F') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../external/css/TradeGothic.woff') format('woff'), /* Modern Browsers */
+         url('../../external/css/TradeGothic.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../external/css/TradeGothic.svg') format('svg'); /* Legacy iOS */
+    font-style: normal;
+}
