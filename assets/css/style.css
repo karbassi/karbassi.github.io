@@ -13,6 +13,36 @@ h1 {
   font-size: 60px;
 }
 
-p {
+p,
+nav {
   font-size: 40px;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li:after {
+  content: ".";
+}
+
+.work h1 {
+  font-size: 40px;
+}
+
+.work p,
+.work nav {
+  font-size: 30px;
+}
+
+.work .row {
+  margin-bottom: 20px;
+}
+
+.work-detail p {
+  font-size: 20px;
 }
