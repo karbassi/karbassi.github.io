@@ -1,0 +1,49 @@
+title: "Ali Karbassi"
+description: ""
+keywords: ""
+baseurl: "/"
+url: "https://karbassi.com"
+domain: "karbassi.com"
+author: "Ali Karbassi <ali@karbassi.com>"
+email: ali@karbassi.com
+
+google:
+  analytics: ""
+  verification: ""
+
+facebook:
+  url: "https://karbassi.com/"
+  type: "website"
+  title: "Ali Karbassi"
+  description: ""
+  image: "https://karbassi.com/assets/img/logo.png"
+  username: "karbassi"
+
+twitter:
+  username: "karbassi"
+  card: "summary_large_image"
+  site: "@karbassi"
+  title: "Ali Karbassi"
+  description: ""
+  image: "https://karbassi.com/assets/img/logo.png"
+
+github:
+  username: "karbassi"
+
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - CNAME
+  - readme.md
+  - .DS_Store
+
+include:
+  - "_pages"
+
+timezone: America/Chicago
+encoding: utf-8
+
