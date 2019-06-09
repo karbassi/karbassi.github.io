@@ -1,3 +1,19 @@
+:root {
+    --dark-background-color: hsl(240, 5%, 17%);
+    --dark-link-primary-color: hsl(210, 100%, 64%);
+    --dark-link-secondary-color: hsl(177, 45%, 53%);
+    --dark-text-primary-color: hsl(240, 9%, 98%);
+    --dark-text-secondary-color: hsla(240, 9%, 98%, 0.8);
+    --dark-text-conditional-color: hsl(240, 9%, 98%);
+
+    --light-background-color: hsl(240, 9%, 98%);
+    --light-link-primary-color: hsl(214, 100%, 44%);
+    --light-link-secondary-color: hsl(188, 100%, 32%);
+    --light-text-primary-color: hsl(240, 4%, 5%);
+    --light-text-secondary-color: hsl(0, 0%, 45%);
+    --light-text-conditional-color: hsl(240, 3%, 30%);
+}
+
 html,
 body {
     margin: 0;
@@ -5,7 +21,16 @@ body {
 }
 
 body {
+    color: var(--light-text-primary-color);
+    background-color: var(--light-background-color);
+
     font-family: 'Droid Sans Mono', monospace;
+    transition: background-color, color 1000ms ease-in-out;
+}
+
+a {
+    color: var(--light-link-primary-color);
+    text-decoration: none;
 }
 
 .container {
@@ -44,10 +69,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.content a {
-    color: #0275d8;
-    text-decoration: none;
-}
+/* .content a {} */
 
 
 /* Desktop */
@@ -59,9 +81,11 @@ body {
         margin-left: 45px;
         margin-right: 45px;
     }
+
     .sidebar {
         order: 2;
     }
+
     .content {
         order: 1;
         justify-self: center;
@@ -75,5 +99,16 @@ body {
     .container {
         max-width: 1200px;
         margin: 0 auto;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-background-color);
+        color: var(--dark-text-primary-color);
+    }
+
+    a {
+        color: var(--dark-link-primary-color);
     }
 }
