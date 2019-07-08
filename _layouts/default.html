@@ -1,15 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>{%- if page.title -%}{{ page.title }}{%- else -%}{{ site.title }}{%- endif -%}</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="data:;base64,iVBORw0KGgo=" rel="icon">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
     <link href="https://plus.google.com/108693950295101856558/posts" rel="author">
     <link href="/assets/css/style.css" rel="stylesheet">
+    {% if page.style -%}
+    <link href="/assets/css/{{ page.style }}" rel="stylesheet">
+    {% endif -%}
 
-    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
