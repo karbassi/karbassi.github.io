@@ -80,7 +80,7 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
         const allowedUrls = [
             'https://www.ali.codes',
             'http://www.ali.codes',
-            'https://ali.codes'
+            'https://ali.codes',
             'http://ali.codes'
         ];
 
