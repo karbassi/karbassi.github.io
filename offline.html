@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{%- if page.title -%}{{ page.title }}{%- else -%}{{ site.title }}{%- endif -%}</title>
+    <title>Offline</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="data:;base64,iVBORw0KGgo=" rel="icon">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
     <link href="https://plus.google.com/108693950295101856558/posts" rel="author">
     <link href="/assets/css/style.css" rel="stylesheet">
-    {% if page.style -%}
-    <link href="/assets/css/{{ page.style }}" rel="stylesheet">
-    {% endif -%}
-
+    <link href="/assets/css/bio.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
@@ -26,7 +23,18 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    {{ content }}
+    <p>It looks like you’re offline right now.</p>
+
+<p>Not to worry, much of my site is available regardless of network connection.</p>
+
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/bio/">Bio</a></li>
+</ul>
+
+<p>Along with any other pages you’ve previously viewed.</p>
+
 
     <script>
         if (navigator.serviceWorker) {
