@@ -4,7 +4,7 @@ which is in turn a modified version of Jeremy Keith's service worker (https://ad
 with a few additional edits borrowed from Filament Group's. (https://www.filamentgroup.com/sw.js)
 */
 (function () {
-    const version = 'v1';
+    const version = 'v2';
     const cacheName = ':karbassi-2019:';
 
     const staticCacheName = version + cacheName + 'static';
@@ -79,7 +79,9 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
 
         const allowedUrls = [
             'https://www.ali.codes',
-            'http://localhost:4000'
+            'http://www.ali.codes',
+            'https://ali.codes'
+            'http://ali.codes'
         ];
 
         if (!allowedUrls.find(x => url.href.startsWith(x))) return;
