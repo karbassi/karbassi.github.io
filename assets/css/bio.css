@@ -4,12 +4,65 @@ body {
     padding-top: 1.666em;
     padding-bottom: 1.666em;
 
-    font: 16px/1.79 avenir lt, avenir, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
+    font: 16px/1.5 avenir lt, avenir, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
     font-size: calc(16px + (24 - 16) * (100vw - 320px)/(750 - 320));
 
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
+
+.title {
+    text-transform: uppercase;
+}
+
+section {
+    position: relative;
+
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+
+    margin-bottom: 1em;
+
+    border-left: 2em solid #FFF;
+}
+
+section h1 {
+    color: var(--light-text-primary-color);
+    font-size: 0.6em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1em;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: -2em;
+
+    /* transform-origin: 0 0; */
+    /* transform: rotate(90deg); */
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: right;
+}
+
+.small {
+    border-color: #426CFF;
+}
+
+.medium {
+    border-color: #F6BB47;
+}
+
+.large {
+    border-color: #DE504D;
+}
+
 
 @media(min-width: 750px) {
     body {
