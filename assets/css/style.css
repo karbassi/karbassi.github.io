@@ -33,6 +33,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    border-bottom: 3px solid var(--light-link-primary-color);
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -125,4 +129,9 @@ a {
     a {
         color: var(--dark-link-primary-color);
     }
+
+    a:hover {
+	border-color: var(--dark-link-primary-color);
+    }
+
 }
