@@ -27,9 +27,10 @@ section {
     border-left: 2em solid #FFF;
 }
 
-section h1 {
+section .header {
     color: var(--light-text-primary-color);
     font-size: 0.6em;
+    font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
     line-height: 1em;
@@ -49,6 +50,21 @@ section h1 {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-align: right;
+}
+
+.headshots {
+    border-color: rgb(43, 236, 156);
+}
+
+.headshots a:hover {
+    text-decoration: none;
+    border: none;
+
+}
+
+.headshots img:hover {
+    box-sizing: border-box;
+    border: 10px solid #FFF;
 }
 
 .small {
