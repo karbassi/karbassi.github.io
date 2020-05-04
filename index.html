@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Ali Karbassi</title>
-    <meta name="description" content="Ali Karbassi is the Founder and CEO of We All Code, host of Ignite Talks Chicago, and adjunct at IIT Institute of Design.">
-    <link href="data:;base64,iVBORw0KGgo=" rel="icon">
-    <link href="https://fonts.googleapis.com/css?display=swap&family=Droid+Sans+Mono" rel="stylesheet">
-    <link href="https://plus.google.com/108693950295101856558/posts" rel="author">
-    <link href="./assets/css/style.css" rel="stylesheet">
-    <link href="./assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-    <link href="./assets/img/favicons/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
-    <link href="./assets/img/favicons/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
-    <link href="./assets/img/favicons/manifest.json" rel="manifest">
-    <link href="./assets/img/favicons/safari-pinned-tab.svg" rel="mask-icon" color="#ffc40d">
-    <link href="./assets/img/favicons/favicon.ico" rel="shortcut icon">
-    <meta name="apple-mobile-web-app-title" content="Ali Karbassi">
-    <meta name="application-name" content="Ali Karbassi">
-    <meta name="msapplication-TileColor" content="#ffc40d">
-    <meta name="msapplication-TileImage" content="./assets/img/favicons/mstile-144x144.png">
-    <meta name="msapplication-config" content="./assets/img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ali Karbassi</title>
+  <meta name="description" content="Ali Karbassi is the Founder and CEO of We All Code, host of Ignite Talks Chicago, and adjunct at IIT Institute of Design.">
+  <link href="data:;base64,iVBORw0KGgo=" rel="icon">
+  <link href="https://fonts.googleapis.com/css?display=swap&family=Droid+Sans+Mono" rel="stylesheet">
+  <link href="https://plus.google.com/108693950295101856558/posts" rel="author">
+  <link href="./assets/css/style.css" rel="stylesheet">
+  <link href="./assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="./assets/img/favicons/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+  <link href="./assets/img/favicons/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+  <link href="./assets/img/favicons/manifest.json" rel="manifest">
+  <link href="./assets/img/favicons/safari-pinned-tab.svg" rel="mask-icon" color="#ffc40d">
+  <link href="./assets/img/favicons/favicon.ico" rel="shortcut icon">
+  <meta name="apple-mobile-web-app-title" content="Ali Karbassi">
+  <meta name="application-name" content="Ali Karbassi">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="./assets/img/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="./assets/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-	   <picture>
-	      <source srcset="./assets/img/ali.webp" type="image/webp">
-	      <source srcset="./assets/img/ali.jpg" type="image/jpeg">
-	      <img src="./assets/img/ali.jpg" alt="A lovely photograph of Ali Karbassi holding a camera." class="profile-img">
-	   </picture>
-        </div>
+  <div class="container">
+    <aside class="sidebar">
+      <picture>
+        <source srcset="./assets/img/ali.webp" type="image/webp">
+        <source srcset="./assets/img/ali.jpg" type="image/jpeg">
+        <img src="./assets/img/ali.jpg" alt="A lovely photograph of Ali Karbassi holding a camera." class="profile-img">
+      </picture>
+    </aside>
 
-        <div class="content">
-            <h1>Hello! I'm Ali Karbassi.</h1>
-            <p>List maker; <s>List crosser-outer</s>. Traveler. Photographer. <a href="https://github.com/karbassi" title="GitHub">Coder</a>. Speaker.</p>
-            <p>Founder &amp; CEO of <a href="https://weallcode.org">We All Code</a>.</p>
-            <p>Adjunct at <a href="https://id.iit.edu/">IIT Institute of Design</a>.</p>
-            <p>Host of <a href="https://ignitechi.org">Ignite Chicago</a>.</p>
-        </div>
-    </div>
+    <main class="content">
+      <h1>Hello! I'm Ali Karbassi.</h1>
+      <p>List maker; <s>List crosser-outer</s>. Traveler. Photographer. <a href="https://github.com/karbassi" title="GitHub">Coder</a>. Speaker.</p>
+      <p>Founder &amp; CEO of <a href="https://weallcode.org">We All Code</a>.</p>
+      <p>Adjunct at <a href="https://id.iit.edu/">IIT Institute of Design</a>.</p>
+      <p>Host of <a href="https://ignitechi.org">Ignite Chicago</a>.</p>
+    </main>
+  </div>
 
 
-    <script>
-        if (navigator.serviceWorker) {
-            navigator.serviceWorker.register('/sw.js', {
-                scope: '/'
-            });
-            window.addEventListener('load', function () {
-                if (navigator.serviceWorker.controller) {
-                    navigator.serviceWorker.controller.postMessage({
-                        'command': 'trimCaches'
-                    });
-                }
-            });
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('/sw.js', {
+        scope: '/'
+      });
+      window.addEventListener('load', function () {
+        if (navigator.serviceWorker.controller) {
+          navigator.serviceWorker.controller.postMessage({
+            'command': 'trimCaches'
+          });
         }
-    </script>
+      });
+    }
+  </script>
 </body>
 </html>
