@@ -1,15 +1,15 @@
 main {
-    width: 50vw;
-    margin-left: auto;
-    margin-right: auto;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 blockquote {
-    border-left: 10px solid #F6BB47;
-    padding-left: 10px;
-    margin-left: 0;
+  border-left: 10px solid #f6bb47;
+  padding-left: 10px;
+  margin-left: 0;
 }
 
 section {
-    margin-bottom: 5em;
+  margin-bottom: 5em;
 }

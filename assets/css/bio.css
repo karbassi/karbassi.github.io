@@ -1,87 +1,86 @@
 body {
-    max-width: 740px;
-    margin: 0 auto 120px;
-    padding-top: 1.666em;
-    padding-bottom: 1.666em;
+  max-width: 740px;
+  margin: 0 auto 120px;
+  padding-top: 1.666em;
+  padding-bottom: 1.666em;
 
-    font: 16px/1.5 avenir lt, avenir, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
-    font-size: calc(16px + (24 - 16) * (100vw - 320px)/(750 - 320));
+  font: 16px/1.5 avenir lt, avenir, -apple-system, BlinkMacSystemFont, segoe ui,
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif;
+  font-size: calc(16px + (24 - 16) * (100vw - 320px) / (750 - 320));
 
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 .title {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 section {
-    position: relative;
+  position: relative;
 
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
 
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 
-    border-left: 2em solid #FFF;
+  border-left: 2em solid #fff;
 }
 
 section .header {
-    color: var(--light-text-primary-color);
-    font-size: 0.6em;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    line-height: 1em;
+  color: var(--light-text-primary-color);
+  font-size: 0.6em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1em;
 
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    padding: 0;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: -2em;
+  padding: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: -2em;
 
-    /* transform-origin: 0 0; */
-    /* transform: rotate(90deg); */
+  /* transform-origin: 0 0; */
+  /* transform: rotate(90deg); */
 
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    text-align: right;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: right;
 }
 
 .headshots {
-    border-color: rgb(43, 236, 156);
+  border-color: rgb(43, 236, 156);
 }
 
 .headshots a:hover {
-    text-decoration: none;
-    border: none;
-
+  text-decoration: none;
+  border: none;
 }
 
 .headshots img:hover {
-    box-sizing: border-box;
-    border: 10px solid #FFF;
+  box-sizing: border-box;
+  border: 10px solid #fff;
 }
 
 .small {
-    border-color: #426CFF;
+  border-color: #426cff;
 }
 
 .medium {
-    border-color: #F6BB47;
+  border-color: #f6bb47;
 }
 
 .large {
-    border-color: #DE504D;
+  border-color: #de504d;
 }
 
-
-@media(min-width: 750px) {
-    body {
-        font-size: 24px;
-    }
+@media (min-width: 750px) {
+  body {
+    font-size: 24px;
+  }
 }
