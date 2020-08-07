@@ -13,3 +13,14 @@ blockquote {
 section {
   margin-bottom: 5em;
 }
+
+.press-item main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.press-item main img {
+  width: 100%;
+}
