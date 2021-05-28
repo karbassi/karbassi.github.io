@@ -4,8 +4,8 @@ which is in turn a modified version of Jeremy Keith's service worker (https://ad
 with a few additional edits borrowed from Filament Group's. (https://www.filamentgroup.com/sw.js)
 */
 (function () {
-  const version = "v11";
-  const cacheName = ":karbassi-2019:";
+  const version = "v12";
+  const cacheName = ":karbassi-2021:";
 
   const staticCacheName = version + cacheName + "static";
   const pagesCacheName = cacheName + "pages";
