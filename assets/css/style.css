@@ -18,17 +18,26 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
+  margin: 0;
 }
 
 body {
+  padding-top: 1em;
+  padding-bottom: 1em;
   color: var(--text-primary-color);
   background-color: var(--background-color);
-
   font-family: 'Droid Sans Mono', monospace;
-  transition: background-color, color 1000ms ease-in-out;
+  transition-property: background-color, color;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
 }
 
 a {
@@ -55,9 +64,10 @@ a:hover {
 }
 
 .profile-img {
-  border-radius: 50%;
   max-width: 100%;
   height: auto;
+  border-radius: 70% 30% 30% 70%/60% 40% 60% 40%;
+  animation: wobble 15s ease-in-out alternate infinite;
 }
 
 .content h1 {
@@ -68,16 +78,23 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
+.content h2,
 .content p {
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.1;
-  margin-top: 0;
-  margin-bottom: 1.5rem;
 }
 
-/* Desktop */
+.content .inline {
+  display: inline;
+}
+
 @media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .container {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 30px;
@@ -94,13 +111,35 @@ a:hover {
     order: 1;
     justify-self: center;
     align-self: center;
+    padding-left: 1em;
   }
 }
 
-/* Desktop Large */
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
     margin: 0 auto;
+  }
+}
+
+@media (inverted-colors: inverted) {
+  img,
+  video {
+    filter: invert(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    transition: none;
+  }
+}
+
+@keyframes wobble {
+  50% {
+    border-radius: 40% 73% 53% 53% / 64% 37% 60% 40%;
+  }
+  100% {
+    border-radius: 40% 71% 55% 60% / 44% 70% 40% 73%;
   }
 }

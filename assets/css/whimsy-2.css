@@ -1,0 +1,68 @@
+@media (min-width: 992px) {
+  /* Halloween Gradient Color Scheme */
+  :root {
+    --gradient-1: #eb6122;
+    --gradient-2: #c9532c;
+    --gradient-3: #a84535;
+    --gradient-4: #86383f;
+    --gradient-5: #652a48;
+    --gradient-6: #431c52;
+    --border-size: 10px;
+  }
+
+  @keyframes shine {
+    from {
+      background-position: 0%;
+    }
+    to {
+      background-position: 100%;
+    }
+  }
+
+  body,
+  html {
+    display: flex;
+    height: 100%;
+  }
+
+  html {
+    background: var(--background-color);
+  }
+
+  body {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    position: static;
+    padding: 2em;
+    background-clip: padding-box;
+    border: var(--border-size) solid transparent;
+  }
+
+  body:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: linear-gradient(
+      45deg,
+      var(--gradient-1),
+      var(--gradient-2),
+      var(--gradient-3),
+      var(--gradient-4),
+      var(--gradient-5),
+      var(--gradient-6),
+      var(--gradient-5),
+      var(--gradient-4),
+      var(--gradient-3),
+      var(--gradient-2),
+      var(--gradient-1)
+    );
+    background-size: 600% 100%;
+    animation: shine 10s linear infinite alternate;
+  }
+}

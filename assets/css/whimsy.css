@@ -1,0 +1,82 @@
+/* Halloween Gradient Color Scheme */
+:root {
+  /* Halloween Orange */
+  --gradient-1: #eb6122;
+  /* Ruddy Brown */
+  --gradient-2: #c9532c;
+  /* Medium Carmine */
+  --gradient-3: #a84535;
+  /* Solid Pink */
+  --gradient-4: #86383f;
+  /* Old Mauve */
+  --gradient-5: #652a48;
+  /* American Purple */
+  --gradient-6: #431c52;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+body {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+body:after,
+body:before,
+html:after,
+html:before {
+  content: '';
+  position: fixed;
+  background: #900
+    linear-gradient(
+      45deg,
+      var(--gradient-1),
+      var(--gradient-2),
+      var(--gradient-3),
+      var(--gradient-4),
+      var(--gradient-5),
+      var(--gradient-6),
+      var(--gradient-5),
+      var(--gradient-4),
+      var(--gradient-3),
+      var(--gradient-2),
+      var(--gradient-1)
+    );
+  background-size: 200% auto;
+  animation: shine 6s linear infinite;
+}
+
+body:after,
+body:before {
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+
+html:after,
+html:before {
+  height: 100%;
+  width: 10px;
+}
+
+html:before {
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+html:after {
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+body:before {
+  top: 0;
+}
+
+body:after {
+  bottom: 0;
+}
