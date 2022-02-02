@@ -4,37 +4,36 @@ which is in turn a modified version of Jeremy Keith's service worker (https://ad
 with a few additional edits borrowed from Filament Group's. (https://www.filamentgroup.com/sw.js)
 */
 (function () {
-  const version = "v12";
-  const cacheName = ":karbassi-2021:";
+  const version = 'v13';
+  const cacheName = ':karbassi-2022:';
 
-  const staticCacheName = version + cacheName + "static";
-  const pagesCacheName = cacheName + "pages";
-  const imagesCacheName = cacheName + "images";
+  const staticCacheName = version + cacheName + 'static';
+  const pagesCacheName = cacheName + 'pages';
+  const imagesCacheName = cacheName + 'images';
 
   const staticAssets = [
-    "/",
-    "/bio/",
-    "/press/",
-    "/blog/",
-    "/calendar/",
-    "/assets/css/remedy.css",
-    "/assets/css/style.css",
-    "/assets/css/bio.css",
-    "/assets/css/calendar.css",
+    '/',
+    '/bio/',
+    '/press/',
+    '/blog/',
+    '/calendar/',
+    '/assets/css/remedy.css',
+    '/assets/css/style.css',
+    '/assets/css/bio.css',
+    '/assets/css/calendar.css',
   ];
 
-  function updateStaticCache() {
+  async function updateStaticCache() {
     // These items must be cached for the Service Worker to complete installation
-    return caches.open(staticCacheName).then((cache) => {
-      return cache.addAll(
-        staticAssets.map(
-          (url) =>
-            new Request(url, {
-              credentials: "include",
-            })
-        )
-      );
-    });
+    const cache = await caches.open(staticCacheName);
+    return await cache.addAll(
+      staticAssets.map(
+        (url) =>
+          new Request(url, {
+            credentials: 'include',
+          })
+      )
+    );
   }
 
   function stashInCache(cacheName, request, response) {
@@ -53,55 +52,62 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
   }
 
   // Remove caches whose name is no longer valid
-  function clearOldCaches() {
-    return caches.keys().then((keys) => {
-      return Promise.all(
-        keys
-          .filter((key) => key.indexOf(version) !== 0)
-          .map((key) => caches.delete(key))
-      );
-    });
+  async function clearOldCaches() {
+    const keys = await caches.keys();
+    return await Promise.all(
+      keys
+        .filter((key) => key.indexOf(version) !== 0)
+        .map((key_1) => caches.delete(key_1))
+    );
   }
 
   // Events!
-  self.addEventListener("message", (event) => {
-    if (event.data.command === "trimCaches") {
+  self.addEventListener('message', (event) => {
+    if (event.data.command === 'trimCaches') {
       trimCache(pagesCacheName, 35);
       trimCache(imagesCacheName, 20);
     }
   });
 
-  self.addEventListener("install", (event) => {
+  self.addEventListener('install', (event) => {
     event.waitUntil(updateStaticCache().then(() => self.skipWaiting()));
   });
 
-  self.addEventListener("activate", (event) => {
+  self.addEventListener('activate', (event) => {
     event.waitUntil(clearOldCaches().then(() => self.clients.claim()));
   });
 
-  self.addEventListener("fetch", (event) => {
+  self.addEventListener('fetch', (event) => {
     const request = event.request;
     const url = new URL(request.url);
 
     const allowedUrls = [
-      "https://www.ali.codes",
-      "http://www.ali.codes",
-      "https://ali.codes",
-      "http://ali.codes",
+      'https://www.ali.codes',
+      'http://www.ali.codes',
+      'https://ali.codes',
+      'http://ali.codes',
     ];
 
-    if (!allowedUrls.find((x) => url.href.startsWith(x))) return;
-    if (request.method !== "GET") return;
-    if (url.href.indexOf("?") !== -1) return;
+    if (!allowedUrls.find((x) => url.href.startsWith(x))) {
+      return;
+    }
 
-    if (request.headers.get("Accept").includes("text/html")) {
+    if (request.method !== 'GET') {
+      return;
+    }
+
+    if (url.href.indexOf('?') !== -1) {
+      return;
+    }
+
+    if (request.headers.get('Accept').includes('text/html')) {
       event.respondWith(
         fetch(request)
           .then((response) => {
             let copy = response.clone();
             if (
               staticAssets.includes(url.pathname) ||
-              staticAssets.includes(url.pathname + "/")
+              staticAssets.includes(url.pathname + '/')
             ) {
               stashInCache(staticCacheName, request, copy);
             } else {
@@ -109,11 +115,10 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
             }
             return response;
           })
-          .catch(() => {
+          .catch(async () => {
             // CACHE or FALLBACK
-            return caches
-              .match(request)
-              .then((response) => response || caches.match("/offline/"));
+            const response = await caches.match(request);
+            return response || caches.match('/offline/');
           })
       );
       return;
@@ -122,17 +127,18 @@ with a few additional edits borrowed from Filament Group's. (https://www.filamen
     event.respondWith(
       fetch(request)
         .then((response) => {
-          if (request.headers.get("Accept").includes("image")) {
+          if (request.headers.get('Accept').includes('image')) {
             let copy = response.clone();
             stashInCache(imagesCacheName, request, copy);
           }
           return response;
         })
-        .catch(() => {
-          return caches
-            .match(request)
-            .then((response) => response)
-            .catch(console.error);
+        .catch(async () => {
+          try {
+            return await caches.match(request);
+          } catch (data) {
+            return console.error(data);
+          }
         })
     );
   });
